@@ -1,8 +1,10 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
-
+import Navbar from '../Navbar/Navbar'
 function Hero() {
   return (
+    <>
+    <Navbar></Navbar>
     <section className="relative w-full h-screen overflow-hidden bg-black">
       {/* Spline Background */}
       <div className="absolute inset-0">
@@ -34,6 +36,7 @@ function Hero() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

@@ -1,10 +1,15 @@
 import Hero from "./components/Home/Hero";
-import Navbar from "./components/Navbar/Navbar";
+import Data from "./components/Data/Data.tsx";
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <Hero></Hero>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Hero></Hero>}></Route>
+        <Route path='/data' element={<Data></Data>}></Route>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
